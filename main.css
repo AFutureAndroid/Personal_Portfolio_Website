@@ -1,0 +1,17 @@
+:root {
+    --background-color: #0b0e20;
+    --text-color: #f0c8c8;
+}
+
+h1 {
+    text-align: center;
+}
+
+#intro {
+    text-align: center;
+}
+
+body {
+    background-color: var(--background-color);
+    color:  var(--text-color) ;
+}
