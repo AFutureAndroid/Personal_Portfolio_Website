@@ -15,3 +15,15 @@ body {
     background-color: var(--background-color);
     color:  var(--text-color) ;
 }
+
+.resume-container {
+    display: flex;
+    justify-content: center;
+}
+
+.resume-container object {
+    width:"800px";
+    height:"500px";
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 6px;
+}
