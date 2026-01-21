@@ -1,5 +1,6 @@
 :root {
-    --background-color: #0b0e20;
+/*    --background-color: #0b0e20;*/
+    --background-color: #121212;
     --text-color: #f0c8c8;
 }
 
@@ -13,17 +14,16 @@ h1 {
 
 body {
     background-color: var(--background-color);
-    color:  var(--text-color) ;
+    color:  var(--text-color);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.resume-container {
-    display: flex;
-    justify-content: center;
+/* Making changes to link style */
+a:link {
+    color: #ff3c3c;
+    text-decoration:none;
 }
 
-.resume-container object {
-    width:"800px";
-    height:"500px";
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-    border-radius: 6px;
+a:visited {
+    color: #a333ff;
 }
