@@ -18,6 +18,13 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Add a frame around photos */
+
+.photo-display {
+    border: 10px solid white;
+    width: 40%;
+}
+
 /* Making changes to link style */
 a:link {
     color: #ff3c3c;
@@ -26,4 +33,10 @@ a:link {
 
 a:visited {
     color: #a333ff;
+}
+
+a:hover {
+    color: #11a718;
+    background-color: #11a7192d;
+    text-decoration: none;
 }
