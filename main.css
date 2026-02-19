@@ -2,6 +2,8 @@
 /*    --background-color: #0b0e20;*/
     --background-color: #121212;
     --text-color: #f0c8c8;
+    --light-mode: white;
+    --light-text: black;
 }
 
 h1 {
@@ -18,25 +20,81 @@ body {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Add a frame around photos */
+/* Styling a button for my resume */
+#resume-btn {
+    display: inline-block;
+    padding:.6rem 1.2rem 0.6rem 1.2rem;
 
+    background-color: #a333ff;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 0.5rem;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#resume-btn:hover {
+    background-color: #d8b3eb;
+    transform: translateX(0.25rem);
+}
+
+#resume-btn:focus-visible {
+    outline: 3px solid #60a5fa;
+    outline-offset: 2px;
+}
+
+/* Add a frame around photos */
 .photo-display {
     border: 10px solid white;
     width: 40%;
 }
 
-/* Making changes to link style */
-a:link {
+/* Making changes to link style for main page navigation*/
+nav a:link {
     color: #ff3c3c;
     text-decoration:none;
 }
 
-a:visited {
-    color: #a333ff;
-}
 
-a:hover {
+nav a:visited {color: #a333ff;}
+
+
+nav a:hover {
     color: #11a718;
     background-color: #11a7192d;
     text-decoration: none;
 }
+
+nav a:active {color:white}
+
+nav a {
+    display: block;
+    width:fit-content;
+    margin-bottom: 1rem;
+}
+
+nav a:nth-child(n) {
+    margin-left: calc(var(--i, 0) * 11rem);
+}
+
+/* Setting up a toggle for light mode - default:dark*/
+.light-mode {
+    background-color: var(--light-mode);
+    color:  var(--light-text);
+    nav a:visited {color: #3c0c63;}
+}
+
+#viewmode {
+    display: inline-block;
+    padding:.6rem 1.2rem 0.6rem 1.2rem;
+
+    background-color: #a333ff;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 0.5rem;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
